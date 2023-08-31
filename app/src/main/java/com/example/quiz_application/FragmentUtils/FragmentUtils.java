@@ -8,7 +8,11 @@ public class FragmentUtils {
     public static void setFragment(FragmentManager fragmentManager, int fragmentContainer, Fragment fragment) {
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(fragmentContainer, fragment);
-        fragmentTransaction.addToBackStack(null);
+        // Only add to back stack if the fragment being added is not the default fragment
+        if (!(fragment instanceof Start_Quiz_Fragment)) {
+            fragmentTransaction.addToBackStack(null);
+        }
+       // fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
     }
 }
