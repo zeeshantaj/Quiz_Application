@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGrey"
+    tools:context=".Fragments.Start_Quiz_Fragment">
+
+
+    <Spinner
+        android:id="@+id/selectTypeSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:entries="@array/select_Type"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:padding="10dp"
+        android:background="@drawable/spinner_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/selectDifficultiesSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_margin="10dp"
+        android:entries="@array/difficulties_level"
+        android:padding="10dp"
+        android:background="@drawable/spinner_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/selectTypeSpinner"
+        app:layout_constraintTop_toBottomOf="@id/selectTypeSpinner" />
+
+    <Spinner
+        android:id="@+id/selectCategorySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_margin="10dp"
+        android:entries="@array/category_names"
+        android:padding="10dp"
+        android:background="@drawable/spinner_bg"
+        app:layout_constraintEnd_toEndOf="@+id/selectDifficultiesSpinner"
+        app:layout_constraintStart_toStartOf="@+id/selectDifficultiesSpinner"
+        app:layout_constraintTop_toBottomOf="@id/selectDifficultiesSpinner" />
+
+    <Button
+        android:id="@+id/startQuizBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="@drawable/btn_bg"
+        android:backgroundTint="@color/Yellow"
+        android:padding="10dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        android:text="@string/start_quiz"
+        android:textColor="?android:textColor"
+        app:layout_constraintEnd_toEndOf="@+id/selectCategorySpinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectCategorySpinner" />
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/or"
+        android:textColor="?android:textColor"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/startRandomQuiz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startQuizBtn" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginEnd="10dp"
+        android:background="?android:textColor"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintEnd_toStartOf="@+id/textView6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="10dp"
+        android:background="?android:textColor"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+    <Button
+        android:id="@+id/startRandomQuiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_bg"
+        android:backgroundTint="@color/Yellow"
+        android:padding="10dp"
+        android:textColor="?android:textColor"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_marginBottom="20dp"
+        android:text="@string/start_random_quiz"
+        android:textSize="24sp"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/howToPlayText"
+        app:layout_constraintEnd_toEndOf="@+id/howToPlayText"
+        app:layout_constraintStart_toStartOf="@+id/howToPlayText" />
+
+    <TextView
+        android:id="@+id/howToPlayText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/how_to_play"
+        android:textColor="@color/black"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

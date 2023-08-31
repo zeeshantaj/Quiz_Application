@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">Quiz_Application</string>
+    <string name="app_name2">Quiz App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="start_random_quiz">Start Random Quiz</string>
+    <string name="how_to_play">How to play?</string>
+    <string name="or">OR</string>
+    <string name="start_quiz">Start Quiz</string>
+    <string name="submit_answers">Submit Answers</string>
+    <string name="congratulation_your_result_is_ready">Congratulation Your Result Is Ready</string>
+    <string name="total_questions">Total Questions:</string>
+    <string name="total_right_answer">Total Right Answer:</string>
+    <string name="total_points">Total Points:</string>
+    <string name="close">Close</string>
+    <string name="_3_for_each_correct_answer_you_get_10_points">3. For Each Correct Answer You Get 10 Points</string>
+    <string name="_2_answer_the_questions_by_choosing_the_correct_option">2. Answer the questions by choosing the correct option.</string>
+    <string name="_1_each_quiz_contain_10_questions">1.Each Quiz Contain 10 questions</string>
+    <string name="instructions_how_to_play">Instructions: How to Play</string>
+    <string name="make_sure_you_connected_to_wifi_or_mobile_data">Make sure you connected to\n wifi or mobile data</string>
+    <string name="make_sure_you_have_internet_service">Make sure you have \n internet service</string>
+    <string name="option_1">Option 1</string>
+    <string name="option_2">Option 2</string>
+    <string name="option_3">Option 3</string>
+    <string name="option_4">Option 4</string>
+    <string name="_4_you_have_score_50_to_bget_pass_in_the_quiz">4. You Have Score 50% to bGet Pass in The Quiz</string>
+
+    <string-array name="difficulties_level">
+        <item>Select Difficulties</item>
+        <item>easy</item>
+        <item>medium</item>
+        <item>hard</item>
+    </string-array>
+    <string-array name="select_Type">
+        <item>Select Type</item>
+        <item>multiple choice questions</item>
+        <item>True/False</item>
+
+    </string-array>
+    <string-array name="category_names">
+        <item>Select Category</item>
+        <item>Any Category</item>
+        <item>General Knowledge</item>
+        <item>Entertainment: Books</item>
+        <item>Entertainment: Film</item>
+        <item>Entertainment: Music</item>
+        <item>Entertainment: Musicals and Theatres</item>
+        <item>Entertainment: Television</item>
+        <item>Entertainment: Board Games</item>
+        <item>Science and Nature</item>
+        <item>Science: Computers</item>
+        <item>Science: Mathematics</item>
+        <item>Mythology</item>
+        <item>Sports</item>
+        <item>Geography</item>
+        <item>History</item>
+        <item>Politics</item>
+        <item>Art</item>
+        <item>Celebrities</item>
+        <item>Animal</item>
+        <item>Vehicles</item>
+        <item>Entertainment: Comics</item>
+        <item>Science: Gadgets</item>
+        <item>Entertainment: Japanese Anime and Manga</item>
+        <item>Entertainment: Cartoon and Animation</item>
+    </string-array>
+
+
+</resources>
